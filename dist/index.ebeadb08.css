@@ -11,6 +11,36 @@
   display: grid;
 }
 
+@media screen and (min-width: 53em) {
+  .grid {
+    grid-template-rows: 2fr;
+    grid-template-columns: 3fr;
+    display: grid;
+    grid-template-areas: "banner banner shop"
+                         "dark about light" !important;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+
+  .shop {
+    grid-area: shop;
+  }
+
+  .dark_chair {
+    grid-area: dark;
+  }
+
+  .about {
+    grid-area: about;
+  }
+
+  .light_chair {
+    grid-area: light;
+  }
+}
+
 *, :before, :after {
   box-sizing: border-box;
   margin: 0;
@@ -48,10 +78,13 @@
 
 .desktop_header {
   z-index: 1000;
-  background: green;
+  width: 100%;
   align-items: center;
   padding: 40px;
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .title {

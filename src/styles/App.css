@@ -10,5 +10,34 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 360px 410px 238px 300px 227px;
-	
+}
+
+@media screen and (min-width: 53em){
+	.grid{
+		display: grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 2fr;
+		grid-template-areas: "banner banner shop"
+							 "dark about light" !important;
+	}
+
+	.banner{
+		grid-area: banner;
+	}
+
+	.shop{
+		grid-area: shop;
+	}
+
+	.dark_chair{
+		grid-area: dark;
+	}
+
+	.about{
+		grid-area: about;
+	}
+
+	.light_chair{
+		grid-area: light;
+	}
 }
