@@ -26953,9 +26953,9 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _appCss = require("../styles/App.css");
 var _headerJs = require("./Header.js");
 var _bannerJs = require("./Banner.js");
-var _controllerJs = require("./Controller.js");
 var _shopJs = require("./Shop.js");
 var _darkChairJs = require("./Dark_chair.js");
+var _aboutJs = require("./About.js");
 var _lightChairJs = require("./Light_chair.js");
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26984,20 +26984,20 @@ function App() {
                         lineNumber: 16,
                         columnNumber: 5
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lightChairJs.Light_chair), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJs.About), {}, void 0, false, {
                         fileName: "src/js/App.js",
                         lineNumber: 17,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lightChairJs.Light_chair), {}, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 18,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/js/App.js",
                 lineNumber: 13,
-                columnNumber: 4
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
-                fileName: "src/js/App.js",
-                lineNumber: 19,
                 columnNumber: 4
             }, this)
         ]
@@ -27016,7 +27016,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP","./Banner.js":"ab884","./Controller.js":"9mAZ4","./Shop.js":"6LABJ","./Dark_chair.js":"eVBXV","./Light_chair.js":"5QrmX"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP","./Banner.js":"ab884","./Shop.js":"6LABJ","./Dark_chair.js":"eVBXV","./Light_chair.js":"5QrmX","./About.js":"6CFfO"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27412,23 +27412,24 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Banner", ()=>Banner);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-// import '../styles/Banner.css';
+var _bannerCss = require("../styles/Banner.css");
 var _mobileImageHero1Jpg = require("../assets/mobile-image-hero-1.jpg");
 var _mobileImageHero1JpgDefault = parcelHelpers.interopDefault(_mobileImageHero1Jpg);
+var _controllerJs = require("./Controller.js");
 function Banner() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "banner",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            src: (0, _mobileImageHero1JpgDefault.default),
-            alt: "banner"
-        }, void 0, false, {
+        style: {
+            position: "relative"
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
             fileName: "src/js/Banner.js",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "src/js/Banner.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 3
     }, this);
 }
@@ -27441,10 +27442,10 @@ $RefreshReg$(_c, "Banner");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/mobile-image-hero-1.jpg":"31jU7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"31jU7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/mobile-image-hero-1.jpg":"31jU7","../styles/Banner.css":"g3xFW","./Controller.js":"9mAZ4"}],"31jU7":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "mobile-image-hero-1.e3a73dd8.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"9mAZ4":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"g3xFW":[function() {},{}],"9mAZ4":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1e59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27511,7 +27512,7 @@ $RefreshReg$(_c, "Controller");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/Controller.css":"4nFz0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/icon-angle-left.svg":"6Qohi","../assets/icon-angle-right.svg":"3LWU6"}],"4nFz0":[function() {},{}],"6Qohi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/Controller.css":"4nFz0","../assets/icon-angle-left.svg":"6Qohi","../assets/icon-angle-right.svg":"3LWU6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4nFz0":[function() {},{}],"6Qohi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-left.c34aaad6.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"3LWU6":[function(require,module,exports) {
@@ -27601,22 +27602,13 @@ $parcel$ReactRefreshHelpers$a642.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// import dark_chair from '../assets/image-about-dark.jpg';
 parcelHelpers.export(exports, "Dark_chair", ()=>Dark_chair);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-// import '../styles/Dark_chair.css';
-var _imageAboutDarkJpg = require("../assets/image-about-dark.jpg");
-var _imageAboutDarkJpgDefault = parcelHelpers.interopDefault(_imageAboutDarkJpg);
+var _darkChairCss = require("../styles/Dark_chair.css");
 function Dark_chair() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "dark_chair",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            src: (0, _imageAboutDarkJpgDefault.default),
-            alt: "dark_chair"
-        }, void 0, false, {
-            fileName: "src/js/Dark_chair.js",
-            lineNumber: 7,
-            columnNumber: 4
-        }, this)
+        className: "dark_chair"
     }, void 0, false, {
         fileName: "src/js/Dark_chair.js",
         lineNumber: 6,
@@ -27632,10 +27624,7 @@ $RefreshReg$(_c, "Dark_chair");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/image-about-dark.jpg":"1pLd7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1pLd7":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "image-about-dark.bcc41aa9.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"5QrmX":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/Dark_chair.css":"jSYFA"}],"jSYFA":[function() {},{}],"5QrmX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a571 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27644,22 +27633,13 @@ $parcel$ReactRefreshHelpers$a571.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+// import light_chair from '../assets/image-about-light.jpg';
 parcelHelpers.export(exports, "Light_chair", ()=>Light_chair);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-// import '../styles/Light_chair.css';
-var _imageAboutLightJpg = require("../assets/image-about-light.jpg");
-var _imageAboutLightJpgDefault = parcelHelpers.interopDefault(_imageAboutLightJpg);
+var _lightChairCss = require("../styles/Light_chair.css");
 function Light_chair() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "light_chair",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            src: (0, _imageAboutLightJpgDefault.default),
-            alt: "light_chair"
-        }, void 0, false, {
-            fileName: "src/js/Light_chair.js",
-            lineNumber: 7,
-            columnNumber: 4
-        }, this)
+        className: "light_chair"
     }, void 0, false, {
         fileName: "src/js/Light_chair.js",
         lineNumber: 6,
@@ -27675,9 +27655,52 @@ $RefreshReg$(_c, "Light_chair");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/image-about-light.jpg":"4dguc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4dguc":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "image-about-light.a0207578.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/Light_chair.css":"2v0v9"}],"2v0v9":[function() {},{}],"6CFfO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$59be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$59be.prelude(module);
 
-},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "About", ()=>About);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _aboutCss = require("../styles/About.css");
+function About() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "about",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                children: "about our furniture"
+            }, void 0, false, {
+                fileName: "src/js/About.js",
+                lineNumber: 6,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need. from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space."
+            }, void 0, false, {
+                fileName: "src/js/About.js",
+                lineNumber: 7,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/About.js",
+        lineNumber: 5,
+        columnNumber: 3
+    }, this);
+}
+_c = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$59be.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../styles/About.css":"1mg4W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1mg4W":[function() {},{}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
 
 //# sourceMappingURL=index.739bf03c.js.map

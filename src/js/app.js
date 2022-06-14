@@ -1,9 +1,9 @@
 import '../styles/App.css'
 import { Header } from './Header.js'
 import { Banner } from './Banner.js'
-import { Controller } from './Controller.js'
 import { Shop } from './Shop.js'
 import { Dark_chair } from './Dark_chair.js'
+import { About } from './About.js'
 import { Light_chair } from './Light_chair.js'
 
 export function App() {
@@ -14,9 +14,9 @@ export function App() {
 				<Banner />
 				<Shop />
 				<Dark_chair />
+				<About />
 				<Light_chair />
 			</div>
-			<Controller />
 		</div>
 	)
 }

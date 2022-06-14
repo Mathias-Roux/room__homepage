@@ -1,5 +1,5 @@
 .desktop_header{
-	
+	z-index: 1000;
 	padding: 40px 40px;
 	display: flex;
 	align-items: center;

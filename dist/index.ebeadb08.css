@@ -6,13 +6,8 @@
 }
 
 .grid {
-  grid-template-rows: repeat(5, minmax(300px, auto));
+  grid-template-rows: 360px 410px 238px 300px 227px;
   grid-template-columns: 1fr;
-  grid-template-areas: "banner"
-                       "shop"
-                       "table"
-                       "about"
-                       "chair";
   display: grid;
 }
 
@@ -23,6 +18,7 @@
 }
 
 .mobile_header {
+  z-index: 1000;
   width: 100%;
   align-items: center;
   padding: 40px 30px;
@@ -51,6 +47,7 @@
 }
 
 .desktop_header {
+  z-index: 1000;
   background: green;
   align-items: center;
   padding: 40px;
@@ -82,22 +79,33 @@
   margin-right: 30px;
 }
 
+.banner {
+  background-image: url("mobile-image-hero-1.e3a73dd8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .controller {
   width: 100px;
   height: 50px;
   background: #000;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .left, .right {
   width: 50px;
   height: 50px;
+  cursor: pointer;
   place-items: center;
   display: grid;
 }
 
 .shop {
-  padding: 50px 30px;
+  padding: 60px 30px;
 }
 
 .shop > h1 {
@@ -108,6 +116,7 @@
   color: #a1a1a1;
   margin-bottom: 40px;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .button {
@@ -124,6 +133,39 @@
 .button > img {
   margin: auto 0;
   display: block;
+}
+
+.dark_chair {
+  background-image: url("image-about-dark.bcc41aa9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.light_chair {
+  background-image: url("image-about-light.a0207578.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  padding: 50px 30px;
+}
+
+.about > span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about > p {
+  color: #a1a1a1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=index.ebeadb08.css.map */

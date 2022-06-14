@@ -1,0 +1,18 @@
+.about{
+	padding: 50px 30px;
+}
+
+.about > span{
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-weight: 700;
+}
+
+.about > p{
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	color: hsl(0, 0%, 63%);
+	margin-bottom: 40px;
+}

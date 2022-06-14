@@ -3,6 +3,9 @@
 	width: 100px;
 	height: 50px;
 	background: black;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 .left, .right{
@@ -10,4 +13,5 @@
 	height: 50px;
 	display: grid;
 	place-items: center;
+	cursor: pointer;
 }

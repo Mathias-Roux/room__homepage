@@ -9,10 +9,6 @@
 .grid{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(5, minmax(300px, auto));
-	grid-template-areas: "banner"
-						 "shop"
-						 "table"
-						 "about"
-						 "chair";
+	grid-template-rows: 360px 410px 238px 300px 227px;
+	
 }
