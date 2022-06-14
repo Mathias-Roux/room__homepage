@@ -1,13 +1,15 @@
 .mobile_header{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	padding: 40px 30px;
 	display: flex;
 	align-items: center;
-	background: green;
 }
 
 .icon{
-	flex: 0.5;
+	flex: .65;
 }
 
 .icon > img{

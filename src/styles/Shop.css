@@ -1,0 +1,29 @@
+.shop{
+	padding: 50px 30px;
+}
+
+.shop > h1{
+	margin-bottom: 20px;
+}
+
+.shop > p{
+	font-size: 16px;
+	color: hsl(0, 0%, 63%);
+	margin-bottom: 40px;
+}
+
+.button{
+	display: flex;
+	cursor: pointer;
+}
+
+.button > span{
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	margin-right: 30px;
+}
+
+.button > img {
+ 	display: block;
+ 	margin: auto 0;
+}

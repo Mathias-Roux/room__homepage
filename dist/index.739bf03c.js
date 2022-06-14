@@ -26952,26 +26952,58 @@ parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _appCss = require("../styles/App.css");
 var _headerJs = require("./Header.js");
+var _bannerJs = require("./Banner.js");
+var _controllerJs = require("./Controller.js");
+var _shopJs = require("./Shop.js");
+var _darkChairJs = require("./Dark_chair.js");
+var _lightChairJs = require("./Light_chair.js");
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJs.Header), {}, void 0, false, {
                 fileName: "src/js/App.js",
-                lineNumber: 7,
+                lineNumber: 12,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid"
-            }, void 0, false, {
+                className: "grid",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerJs.Banner), {}, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 14,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {}, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 15,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _darkChairJs.Dark_chair), {}, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 16,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lightChairJs.Light_chair), {}, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 17,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/js/App.js",
-                lineNumber: 8,
+                lineNumber: 13,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
+                fileName: "src/js/App.js",
+                lineNumber: 19,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/js/App.js",
-        lineNumber: 6,
+        lineNumber: 11,
         columnNumber: 3
     }, this);
 }
@@ -26984,7 +27016,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP","./Banner.js":"ab884","./Controller.js":"9mAZ4","./Shop.js":"6LABJ","./Dark_chair.js":"eVBXV","./Light_chair.js":"5QrmX"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27369,6 +27401,283 @@ $RefreshReg$(_c, "Desktop_Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../styles/Desktop_Header.css":"9kfKS","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9kfKS":[function() {},{}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
+},{"react/jsx-dev-runtime":"iTorj","../styles/Desktop_Header.css":"9kfKS","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9kfKS":[function() {},{}],"ab884":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0de2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0de2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Banner", ()=>Banner);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+// import '../styles/Banner.css';
+var _mobileImageHero1Jpg = require("../assets/mobile-image-hero-1.jpg");
+var _mobileImageHero1JpgDefault = parcelHelpers.interopDefault(_mobileImageHero1Jpg);
+function Banner() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "banner",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: (0, _mobileImageHero1JpgDefault.default),
+            alt: "banner"
+        }, void 0, false, {
+            fileName: "src/js/Banner.js",
+            lineNumber: 7,
+            columnNumber: 4
+        }, this)
+    }, void 0, false, {
+        fileName: "src/js/Banner.js",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+}
+_c = Banner;
+var _c;
+$RefreshReg$(_c, "Banner");
+
+  $parcel$ReactRefreshHelpers$0de2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/mobile-image-hero-1.jpg":"31jU7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"31jU7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "mobile-image-hero-1.e3a73dd8.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"9mAZ4":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1e59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1e59.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Controller", ()=>Controller);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _controllerCss = require("../styles/Controller.css");
+var _iconAngleLeftSvg = require("../assets/icon-angle-left.svg");
+var _iconAngleLeftSvgDefault = parcelHelpers.interopDefault(_iconAngleLeftSvg);
+var _iconAngleRightSvg = require("../assets/icon-angle-right.svg");
+var _iconAngleRightSvgDefault = parcelHelpers.interopDefault(_iconAngleRightSvg);
+function Controller() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "controller",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "left",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _iconAngleLeftSvgDefault.default),
+                    alt: "left_arrow"
+                }, void 0, false, {
+                    fileName: "src/js/Controller.js",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Controller.js",
+                lineNumber: 10,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "right",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _iconAngleRightSvgDefault.default),
+                    alt: "right_arrow"
+                }, void 0, false, {
+                    fileName: "src/js/Controller.js",
+                    lineNumber: 14,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Controller.js",
+                lineNumber: 13,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Controller.js",
+        lineNumber: 9,
+        columnNumber: 3
+    }, this);
+}
+_c = Controller;
+var _c;
+$RefreshReg$(_c, "Controller");
+
+  $parcel$ReactRefreshHelpers$1e59.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/Controller.css":"4nFz0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/icon-angle-left.svg":"6Qohi","../assets/icon-angle-right.svg":"3LWU6"}],"4nFz0":[function() {},{}],"6Qohi":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-left.c34aaad6.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"3LWU6":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-right.6a99e02e.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6LABJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$16fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$16fd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Shop", ()=>Shop);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _shopCss = require("../styles/Shop.css");
+var _iconArrowSvg = require("../assets/icon-arrow.svg");
+var _iconArrowSvgDefault = parcelHelpers.interopDefault(_iconArrowSvg);
+function Shop() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shop",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Discover innovation ways to decorate"
+            }, void 0, false, {
+                fileName: "src/js/Shop.js",
+                lineNumber: 8,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
+            }, void 0, false, {
+                fileName: "src/js/Shop.js",
+                lineNumber: 9,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "button",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "shop now"
+                    }, void 0, false, {
+                        fileName: "src/js/Shop.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _iconArrowSvgDefault.default),
+                        alt: "arrow"
+                    }, void 0, false, {
+                        fileName: "src/js/Shop.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/js/Shop.js",
+                lineNumber: 15,
+                columnNumber: 16
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Shop.js",
+        lineNumber: 7,
+        columnNumber: 3
+    }, this);
+}
+_c = Shop;
+var _c;
+$RefreshReg$(_c, "Shop");
+
+  $parcel$ReactRefreshHelpers$16fd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../styles/Shop.css":"knbQF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/icon-arrow.svg":"4LsdD"}],"knbQF":[function() {},{}],"4LsdD":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-arrow.0c3132cd.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"eVBXV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a642 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a642.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Dark_chair", ()=>Dark_chair);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+// import '../styles/Dark_chair.css';
+var _imageAboutDarkJpg = require("../assets/image-about-dark.jpg");
+var _imageAboutDarkJpgDefault = parcelHelpers.interopDefault(_imageAboutDarkJpg);
+function Dark_chair() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "dark_chair",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: (0, _imageAboutDarkJpgDefault.default),
+            alt: "dark_chair"
+        }, void 0, false, {
+            fileName: "src/js/Dark_chair.js",
+            lineNumber: 7,
+            columnNumber: 4
+        }, this)
+    }, void 0, false, {
+        fileName: "src/js/Dark_chair.js",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+}
+_c = Dark_chair;
+var _c;
+$RefreshReg$(_c, "Dark_chair");
+
+  $parcel$ReactRefreshHelpers$a642.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/image-about-dark.jpg":"1pLd7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1pLd7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "image-about-dark.bcc41aa9.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"5QrmX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a571 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a571.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Light_chair", ()=>Light_chair);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+// import '../styles/Light_chair.css';
+var _imageAboutLightJpg = require("../assets/image-about-light.jpg");
+var _imageAboutLightJpgDefault = parcelHelpers.interopDefault(_imageAboutLightJpg);
+function Light_chair() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "light_chair",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: (0, _imageAboutLightJpgDefault.default),
+            alt: "light_chair"
+        }, void 0, false, {
+            fileName: "src/js/Light_chair.js",
+            lineNumber: 7,
+            columnNumber: 4
+        }, this)
+    }, void 0, false, {
+        fileName: "src/js/Light_chair.js",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+}
+_c = Light_chair;
+var _c;
+$RefreshReg$(_c, "Light_chair");
+
+  $parcel$ReactRefreshHelpers$a571.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/image-about-light.jpg":"4dguc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4dguc":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "image-about-light.a0207578.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
 
 //# sourceMappingURL=index.739bf03c.js.map
