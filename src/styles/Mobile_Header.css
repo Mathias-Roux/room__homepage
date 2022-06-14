@@ -1,0 +1,25 @@
+.mobile_header{
+	width: 100%;
+	padding: 40px 30px;
+	display: flex;
+	align-items: center;
+	background: green;
+}
+
+.icon{
+	flex: 0.5;
+}
+
+.icon > img{
+	display: block;
+	margin: auto 0;
+}
+
+.icon > img:hover{
+	cursor: pointer;
+}
+
+.title > img{
+	display: block;
+	margin: auto 0;
+}

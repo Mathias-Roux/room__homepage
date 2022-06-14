@@ -1,0 +1,34 @@
+.desktop_header{
+	
+	padding: 40px 40px;
+	display: flex;
+	align-items: center;
+	background: green;
+}
+
+.title{
+	margin-right: 50px;
+}
+
+.title > img{
+	display: block;
+	margin: auto 0;
+}
+
+.links{
+	list-style: none;
+	display: flex;
+	color: white;
+	cursor: default;
+}
+
+.links > li:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.links > li:not(:last-child){
+	margin-right: 30px;
+} 
+
+

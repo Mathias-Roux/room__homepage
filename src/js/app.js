@@ -1,3 +1,13 @@
+import '../styles/App.css'
+import { Header } from './Header.js'
+
 export function App() {
-	return <h1>gze</h1>
+	return (
+		<div className="app">
+			<Header />
+			<div className="grid">
+				
+			</div>
+		</div>
+	)
 }

@@ -26950,13 +26950,29 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _appCss = require("../styles/App.css");
+var _headerJs = require("./Header.js");
 function App() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "gze"
-    }, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJs.Header), {}, void 0, false, {
+                fileName: "src/js/App.js",
+                lineNumber: 7,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid"
+            }, void 0, false, {
+                fileName: "src/js/App.js",
+                lineNumber: 8,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "src/js/App.js",
-        lineNumber: 2,
-        columnNumber: 9
+        lineNumber: 6,
+        columnNumber: 3
     }, this);
 }
 _c = App;
@@ -26968,7 +26984,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27118,6 +27134,241 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
+},{"react-refresh/runtime":"786KC"}],"goyoj":[function() {},{}],"dUnNP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9315 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9315.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Header", ()=>Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _mobileHeaderJs = require("./Mobile_Header.js");
+var _desktopHeaderJs = require("./Desktop_Header.js");
+var _s = $RefreshSig$();
+function Header() {
+    _s();
+    const [width, setWidth] = (0, _react.useState)(window.innerWidth);
+    const breakpoint = 848;
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("resize", ()=>setWidth(window.innerWidth));
+    }, []);
+    return width < breakpoint ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mobileHeaderJs.Mobile_Header), {}, void 0, false, {
+        fileName: "src/js/Header.js",
+        lineNumber: 14,
+        columnNumber: 30
+    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _desktopHeaderJs.Desktop_Header), {}, void 0, false, {
+        fileName: "src/js/Header.js",
+        lineNumber: 14,
+        columnNumber: 50
+    }, this);
+}
+_s(Header, "G7kj69GIMHEKUWgFcp/hGy+ukY8=");
+_c = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$9315.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Mobile_Header.js":"2e1qX","./Desktop_Header.js":"81xqq"}],"2e1qX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$89d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$89d1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Mobile_Header", ()=>Mobile_Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _mobileHeaderCss = require("../styles/Mobile_Header.css");
+var _iconHamburgerSvg = require("../assets/icon-hamburger.svg");
+var _iconHamburgerSvgDefault = parcelHelpers.interopDefault(_iconHamburgerSvg);
+var _logoSvg = require("../assets/logo.svg");
+var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
+function Mobile_Header() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "mobile_header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "icon",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _iconHamburgerSvgDefault.default),
+                    alt: "icon_hamburger"
+                }, void 0, false, {
+                    fileName: "src/js/Mobile_Header.js",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Mobile_Header.js",
+                lineNumber: 10,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "title",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _logoSvgDefault.default),
+                    alt: "room"
+                }, void 0, false, {
+                    fileName: "src/js/Mobile_Header.js",
+                    lineNumber: 14,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Mobile_Header.js",
+                lineNumber: 13,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Mobile_Header.js",
+        lineNumber: 9,
+        columnNumber: 3
+    }, this);
+}
+_c = Mobile_Header;
+var _c;
+$RefreshReg$(_c, "Mobile_Header");
+
+  $parcel$ReactRefreshHelpers$89d1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../styles/Mobile_Header.css":"l4Dh9","../assets/icon-hamburger.svg":"3M8Ig","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"l4Dh9":[function() {},{}],"3M8Ig":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-hamburger.9b6ee044.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"6j9le":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "logo.4bcd4013.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"81xqq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fd02 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fd02.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Desktop_Header", ()=>Desktop_Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _desktopHeaderCss = require("../styles/Desktop_Header.css");
+var _logoSvg = require("../assets/logo.svg");
+var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
+function Desktop_Header() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "desktop_header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "title",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _logoSvgDefault.default),
+                    alt: "room"
+                }, void 0, false, {
+                    fileName: "src/js/Desktop_Header.js",
+                    lineNumber: 8,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Desktop_Header.js",
+                lineNumber: 7,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: "links",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "home"
+                    }, void 0, false, {
+                        fileName: "src/js/Desktop_Header.js",
+                        lineNumber: 11,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "shop"
+                    }, void 0, false, {
+                        fileName: "src/js/Desktop_Header.js",
+                        lineNumber: 12,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "about"
+                    }, void 0, false, {
+                        fileName: "src/js/Desktop_Header.js",
+                        lineNumber: 13,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "contact"
+                    }, void 0, false, {
+                        fileName: "src/js/Desktop_Header.js",
+                        lineNumber: 14,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/js/Desktop_Header.js",
+                lineNumber: 10,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Desktop_Header.js",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+}
+_c = Desktop_Header;
+var _c;
+$RefreshReg$(_c, "Desktop_Header");
+
+  $parcel$ReactRefreshHelpers$fd02.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../styles/Desktop_Header.css":"9kfKS","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9kfKS":[function() {},{}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
 
 //# sourceMappingURL=index.739bf03c.js.map

@@ -1,3 +1,83 @@
+@import "https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap";
+.app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: League Spartan, sans-serif;
+}
 
+.grid {
+  grid-template-rows: repeat(5, minmax(300px, auto));
+  grid-template-columns: 1fr;
+  grid-template-areas: "banner"
+                       "description"
+                       "table"
+                       "about"
+                       "chair";
+  display: grid;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_header {
+  width: 100%;
+  background: green;
+  align-items: center;
+  padding: 40px 30px;
+  display: flex;
+}
+
+.icon {
+  flex: .5;
+}
+
+.icon > img {
+  margin: auto 0;
+  display: block;
+}
+
+.icon > img:hover {
+  cursor: pointer;
+}
+
+.title > img {
+  margin: auto 0;
+  display: block;
+}
+
+.desktop_header {
+  background: green;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+}
+
+.title {
+  margin-right: 50px;
+}
+
+.title > img {
+  margin: auto 0;
+  display: block;
+}
+
+.links {
+  color: #fff;
+  cursor: default;
+  list-style: none;
+  display: flex;
+}
+
+.links > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.links > li:not(:last-child) {
+  margin-right: 30px;
+}
 
 /*# sourceMappingURL=index.ebeadb08.css.map */
