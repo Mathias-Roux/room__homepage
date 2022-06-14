@@ -29,6 +29,7 @@
   }
 
   .dark_chair {
+    width: 30vw;
     grid-area: dark;
   }
 
@@ -119,10 +120,15 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 53em) {
+  .banner {
+    background-image: url("desktop-image-hero-1.32cb3379.jpg");
+  }
+}
+
 .controller {
-  width: 100px;
-  height: 50px;
-  background: #000;
+  width: 120px;
+  height: 60px;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -130,15 +136,20 @@
 }
 
 .left, .right {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
+  background: #000;
   place-items: center;
   display: grid;
 }
 
+.left:hover, .right:hover {
+  background: #454545;
+}
+
 .shop {
-  padding: 60px 30px;
+  padding: 10.5vw 5.3vw;
 }
 
 .shop > h1 {
@@ -157,15 +168,23 @@
   display: flex;
 }
 
+.button:hover {
+  color: #a1a1a1;
+}
+
 .button > span {
   text-transform: uppercase;
   letter-spacing: 12px;
   margin-right: 30px;
 }
 
-.button > img {
+.button > svg {
   margin: auto 0;
   display: block;
+}
+
+.button:hover > svg > path {
+  fill: #a1a1a1;
 }
 
 .dark_chair {
@@ -183,7 +202,7 @@
 }
 
 .about {
-  padding: 50px 30px;
+  padding: 10vw 6vw;
 }
 
 .about > span {

@@ -27530,8 +27530,6 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Shop", ()=>Shop);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shopCss = require("../styles/Shop.css");
-var _iconArrowSvg = require("../assets/icon-arrow.svg");
-var _iconArrowSvgDefault = parcelHelpers.interopDefault(_iconArrowSvg);
 function Shop() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shop",
@@ -27540,14 +27538,14 @@ function Shop() {
                 children: "Discover innovation ways to decorate"
             }, void 0, false, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 8,
+                lineNumber: 7,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
             }, void 0, false, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 9,
+                lineNumber: 8,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27557,27 +27555,37 @@ function Shop() {
                         children: "shop now"
                     }, void 0, false, {
                         fileName: "src/js/Shop.js",
-                        lineNumber: 16,
+                        lineNumber: 15,
                         columnNumber: 17
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _iconArrowSvgDefault.default),
-                        alt: "arrow"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                        width: "40",
+                        height: "12",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                            d: "M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z",
+                            fill: "#000",
+                            "fill-rule": "nonzero"
+                        }, void 0, false, {
+                            fileName: "src/js/Shop.js",
+                            lineNumber: 17,
+                            columnNumber: 18
+                        }, this)
                     }, void 0, false, {
                         fileName: "src/js/Shop.js",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 16
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/js/Shop.js",
-        lineNumber: 7,
+        lineNumber: 6,
         columnNumber: 3
     }, this);
 }
@@ -27590,10 +27598,7 @@ $RefreshReg$(_c, "Shop");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../styles/Shop.css":"knbQF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/icon-arrow.svg":"4LsdD"}],"knbQF":[function() {},{}],"4LsdD":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-arrow.0c3132cd.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"eVBXV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../styles/Shop.css":"knbQF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"knbQF":[function() {},{}],"eVBXV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a642 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

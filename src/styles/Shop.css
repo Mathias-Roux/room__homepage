@@ -1,5 +1,5 @@
 .shop{
-	padding: 60px 30px;
+	padding: 10.5vw 5.3vw;
 }
 
 .shop > h1{
@@ -18,13 +18,21 @@
 	cursor: pointer;
 }
 
+.button:hover{
+	color: hsl(0, 0%, 63%);
+}
+
 .button > span{
 	text-transform: uppercase;
 	letter-spacing: 12px;
 	margin-right: 30px;
 }
 
-.button > img {
+.button > svg {
  	display: block;
  	margin: auto 0;
+}
+
+.button:hover > svg > path{
+ 	fill: hsl(0, 0%, 63%);
 }

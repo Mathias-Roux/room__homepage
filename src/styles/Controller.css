@@ -1,17 +1,25 @@
 .controller{
 	display: flex;
-	width: 100px;
-	height: 50px;
-	background: black;
+	width: 120px;
+	height: 60px;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 }
 
 .left, .right{
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	display: grid;
 	place-items: center;
 	cursor: pointer;
+	background: black;
+}
+
+.left:hover{
+	background: hsl(0, 0%, 27%);
+}
+
+.right:hover{
+	background: hsl(0, 0%, 27%);
 }
