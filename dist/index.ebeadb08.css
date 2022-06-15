@@ -196,8 +196,7 @@
   height: 60px;
   display: flex;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  inset: auto 0 48% auto;
 }
 
 .left, .right {
@@ -222,8 +221,7 @@ img {
 
 @media screen and (min-width: 53em) {
   .controller {
-    bottom: 0;
-    right: 0;
+    inset: auto 26.5vw 9vw auto;
   }
 }
 
