@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import '../styles/Controller.css'
 import left_arrow from '../assets/icon-angle-left.svg'
 import right_arrow from '../assets/icon-angle-right.svg'
