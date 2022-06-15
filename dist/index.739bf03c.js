@@ -26974,7 +26974,9 @@ function App() {
                         lineNumber: 14,
                         columnNumber: 5
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {
+                        step: 1
+                    }, void 0, false, {
                         fileName: "src/js/App.js",
                         lineNumber: 15,
                         columnNumber: 5
@@ -27424,12 +27426,12 @@ function Banner() {
         },
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
             fileName: "src/js/Banner.js",
-            lineNumber: 8,
+            lineNumber: 10,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "src/js/Banner.js",
-        lineNumber: 7,
+        lineNumber: 9,
         columnNumber: 3
     }, this);
 }
@@ -27530,22 +27532,44 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Shop", ()=>Shop);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shopCss = require("../styles/Shop.css");
-function Shop() {
+function Shop({ step: number  }) {
+    const descriptions = {
+        1: {
+            title: "Discover innovation ways to decorate",
+            text: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
+        },
+        2: {
+            title: "We are available all across the globe",
+            text: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we're in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
+        },
+        3: {
+            title: "Manufactured with the best materials",
+            text: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
+        }
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shop",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Discover innovation ways to decorate"
-            }, void 0, false, {
+                children: [
+                    " ",
+                    descriptions[number].title,
+                    " "
+                ]
+            }, void 0, true, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 7,
+                lineNumber: 23,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
-            }, void 0, false, {
+                children: [
+                    " ",
+                    descriptions[number].text,
+                    " "
+                ]
+            }, void 0, true, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 8,
+                lineNumber: 24,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27555,7 +27579,7 @@ function Shop() {
                         children: "shop now"
                     }, void 0, false, {
                         fileName: "src/js/Shop.js",
-                        lineNumber: 15,
+                        lineNumber: 26,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -27568,24 +27592,24 @@ function Shop() {
                             "fill-rule": "nonzero"
                         }, void 0, false, {
                             fileName: "src/js/Shop.js",
-                            lineNumber: 17,
+                            lineNumber: 28,
                             columnNumber: 18
                         }, this)
                     }, void 0, false, {
                         fileName: "src/js/Shop.js",
-                        lineNumber: 16,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/js/Shop.js",
-                lineNumber: 14,
+                lineNumber: 25,
                 columnNumber: 16
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/js/Shop.js",
-        lineNumber: 6,
+        lineNumber: 22,
         columnNumber: 3
     }, this);
 }

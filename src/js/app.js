@@ -12,7 +12,7 @@ export function App() {
 			<Header />
 			<div className="grid">
 				<Banner />
-				<Shop />
+				<Shop step={1}/>
 				<Dark_chair />
 				<About />
 				<Light_chair />
