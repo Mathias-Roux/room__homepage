@@ -26950,65 +26950,83 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _appCss = require("../styles/App.css");
 var _headerJs = require("./Header.js");
 var _bannerJs = require("./Banner.js");
+var _controllerJs = require("./Controller.js");
 var _shopJs = require("./Shop.js");
 var _darkChairJs = require("./Dark_chair.js");
 var _aboutJs = require("./About.js");
 var _lightChairJs = require("./Light_chair.js");
+var _s = $RefreshSig$();
 function App() {
+    _s();
+    const [step, setStep] = (0, _react.useState)(1);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJs.Header), {}, void 0, false, {
                 fileName: "src/js/App.js",
-                lineNumber: 12,
+                lineNumber: 16,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "grid",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerJs.Banner), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerJs.Banner), {
+                        style: {
+                            position: "relative"
+                        }
+                    }, void 0, false, {
                         fileName: "src/js/App.js",
-                        lineNumber: 14,
+                        lineNumber: 18,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {
+                        step: step,
+                        setStep: setStep
+                    }, void 0, false, {
+                        fileName: "src/js/App.js",
+                        lineNumber: 19,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {
                         step: 1
                     }, void 0, false, {
                         fileName: "src/js/App.js",
-                        lineNumber: 15,
+                        lineNumber: 20,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _darkChairJs.Dark_chair), {}, void 0, false, {
                         fileName: "src/js/App.js",
-                        lineNumber: 16,
+                        lineNumber: 21,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJs.About), {}, void 0, false, {
                         fileName: "src/js/App.js",
-                        lineNumber: 17,
+                        lineNumber: 22,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lightChairJs.Light_chair), {}, void 0, false, {
                         fileName: "src/js/App.js",
-                        lineNumber: 18,
+                        lineNumber: 23,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/js/App.js",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/js/App.js",
-        lineNumber: 11,
+        lineNumber: 15,
         columnNumber: 3
     }, this);
 }
+_s(App, "M88kfgrd7Unvr/hfMAIVxST1ckg=");
 _c = App;
 var _c;
 $RefreshReg$(_c, "App");
@@ -27018,7 +27036,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP","./Banner.js":"ab884","./Shop.js":"6LABJ","./Dark_chair.js":"eVBXV","./Light_chair.js":"5QrmX","./About.js":"6CFfO"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/App.css":"goyoj","./Header.js":"dUnNP","./Banner.js":"ab884","./Shop.js":"6LABJ","./Dark_chair.js":"eVBXV","./Light_chair.js":"5QrmX","./About.js":"6CFfO","react":"21dqq","./Controller.js":"9mAZ4"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27417,21 +27435,12 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _bannerCss = require("../styles/Banner.css");
 var _mobileImageHero1Jpg = require("../assets/mobile-image-hero-1.jpg");
 var _mobileImageHero1JpgDefault = parcelHelpers.interopDefault(_mobileImageHero1Jpg);
-var _controllerJs = require("./Controller.js");
 function Banner() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "banner",
-        style: {
-            position: "relative"
-        },
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
-            fileName: "src/js/Banner.js",
-            lineNumber: 10,
-            columnNumber: 4
-        }, this)
+        className: "banner"
     }, void 0, false, {
         fileName: "src/js/Banner.js",
-        lineNumber: 9,
+        lineNumber: 7,
         columnNumber: 3
     }, this);
 }
@@ -27444,83 +27453,10 @@ $RefreshReg$(_c, "Banner");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/mobile-image-hero-1.jpg":"31jU7","../styles/Banner.css":"g3xFW","./Controller.js":"9mAZ4"}],"31jU7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/mobile-image-hero-1.jpg":"31jU7","../styles/Banner.css":"g3xFW"}],"31jU7":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "mobile-image-hero-1.e3a73dd8.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"g3xFW":[function() {},{}],"9mAZ4":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1e59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1e59.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Controller", ()=>Controller);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _controllerCss = require("../styles/Controller.css");
-var _iconAngleLeftSvg = require("../assets/icon-angle-left.svg");
-var _iconAngleLeftSvgDefault = parcelHelpers.interopDefault(_iconAngleLeftSvg);
-var _iconAngleRightSvg = require("../assets/icon-angle-right.svg");
-var _iconAngleRightSvgDefault = parcelHelpers.interopDefault(_iconAngleRightSvg);
-function Controller() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "controller",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "left",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _iconAngleLeftSvgDefault.default),
-                    alt: "left_arrow"
-                }, void 0, false, {
-                    fileName: "src/js/Controller.js",
-                    lineNumber: 11,
-                    columnNumber: 5
-                }, this)
-            }, void 0, false, {
-                fileName: "src/js/Controller.js",
-                lineNumber: 10,
-                columnNumber: 4
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "right",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _iconAngleRightSvgDefault.default),
-                    alt: "right_arrow"
-                }, void 0, false, {
-                    fileName: "src/js/Controller.js",
-                    lineNumber: 14,
-                    columnNumber: 5
-                }, this)
-            }, void 0, false, {
-                fileName: "src/js/Controller.js",
-                lineNumber: 13,
-                columnNumber: 4
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/js/Controller.js",
-        lineNumber: 9,
-        columnNumber: 3
-    }, this);
-}
-_c = Controller;
-var _c;
-$RefreshReg$(_c, "Controller");
-
-  $parcel$ReactRefreshHelpers$1e59.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/Controller.css":"4nFz0","../assets/icon-angle-left.svg":"6Qohi","../assets/icon-angle-right.svg":"3LWU6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4nFz0":[function() {},{}],"6Qohi":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-left.c34aaad6.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"3LWU6":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-right.6a99e02e.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"6LABJ":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"g3xFW":[function() {},{}],"6LABJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$16fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27730,6 +27666,85 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../styles/About.css":"1mg4W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1mg4W":[function() {},{}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
+},{"react/jsx-dev-runtime":"iTorj","../styles/About.css":"1mg4W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1mg4W":[function() {},{}],"9mAZ4":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1e59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1e59.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Controller", ()=>Controller);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _controllerCss = require("../styles/Controller.css");
+var _iconAngleLeftSvg = require("../assets/icon-angle-left.svg");
+var _iconAngleLeftSvgDefault = parcelHelpers.interopDefault(_iconAngleLeftSvg);
+var _iconAngleRightSvg = require("../assets/icon-angle-right.svg");
+var _iconAngleRightSvgDefault = parcelHelpers.interopDefault(_iconAngleRightSvg);
+function Controller({ step: number  }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "controller",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "left",
+                onClick: ()=>{
+                    step(3);
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _iconAngleLeftSvgDefault.default),
+                    alt: "left_arrow"
+                }, void 0, false, {
+                    fileName: "src/js/Controller.js",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Controller.js",
+                lineNumber: 10,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "right",
+                onClick: ()=>{
+                    step(1);
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _iconAngleRightSvgDefault.default),
+                    alt: "right_arrow"
+                }, void 0, false, {
+                    fileName: "src/js/Controller.js",
+                    lineNumber: 14,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "src/js/Controller.js",
+                lineNumber: 13,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/js/Controller.js",
+        lineNumber: 9,
+        columnNumber: 3
+    }, this);
+}
+_c = Controller;
+var _c;
+$RefreshReg$(_c, "Controller");
+
+  $parcel$ReactRefreshHelpers$1e59.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/Controller.css":"4nFz0","../assets/icon-angle-left.svg":"6Qohi","../assets/icon-angle-right.svg":"3LWU6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4nFz0":[function() {},{}],"6Qohi":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-left.c34aaad6.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"3LWU6":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-angle-right.6a99e02e.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","aRq6p","ebWYT"], "ebWYT", "parcelRequire656e")
 
 //# sourceMappingURL=index.739bf03c.js.map

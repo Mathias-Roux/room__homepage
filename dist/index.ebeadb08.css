@@ -126,28 +126,6 @@
   }
 }
 
-.controller {
-  width: 120px;
-  height: 60px;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.left, .right {
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  background: #000;
-  place-items: center;
-  display: grid;
-}
-
-.left:hover, .right:hover {
-  background: #454545;
-}
-
 .shop {
   padding: 10.5vw 5.3vw;
 }
@@ -218,6 +196,28 @@
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.controller {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.left, .right {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background: #000;
+  place-items: center;
+  display: grid;
+}
+
+.left:hover, .right:hover {
+  background: #454545;
 }
 
 /*# sourceMappingURL=index.ebeadb08.css.map */
