@@ -26959,10 +26959,8 @@ var _shopJs = require("./Shop.js");
 var _darkChairJs = require("./Dark_chair.js");
 var _aboutJs = require("./About.js");
 var _lightChairJs = require("./Light_chair.js");
-var _s = $RefreshSig$();
 function App() {
-    _s();
-    const [step, setStep] = (0, _react.useState)(1);
+    const number = 1;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
@@ -26975,24 +26973,19 @@ function App() {
                 className: "grid",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerJs.Banner), {
-                        style: {
-                            position: "relative"
-                        }
+                        step: number
                     }, void 0, false, {
                         fileName: "src/js/App.js",
                         lineNumber: 18,
                         columnNumber: 5
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {
-                        step: step,
-                        setStep: setStep
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _controllerJs.Controller), {}, void 0, false, {
                         fileName: "src/js/App.js",
                         lineNumber: 19,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {
-                        step: 1
+                        step: number
                     }, void 0, false, {
                         fileName: "src/js/App.js",
                         lineNumber: 20,
@@ -27026,7 +27019,6 @@ function App() {
         columnNumber: 3
     }, this);
 }
-_s(App, "M88kfgrd7Unvr/hfMAIVxST1ckg=");
 _c = App;
 var _c;
 $RefreshReg$(_c, "App");
@@ -27433,14 +27425,32 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Banner", ()=>Banner);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _bannerCss = require("../styles/Banner.css");
-var _mobileImageHero1Jpg = require("../assets/mobile-image-hero-1.jpg");
-var _mobileImageHero1JpgDefault = parcelHelpers.interopDefault(_mobileImageHero1Jpg);
-function Banner() {
+var _desktopImageHero1Jpg = require("../assets/desktop-image-hero-1.jpg");
+var _desktopImageHero1JpgDefault = parcelHelpers.interopDefault(_desktopImageHero1Jpg);
+var _desktopImageHero2Jpg = require("../assets/desktop-image-hero-2.jpg");
+var _desktopImageHero2JpgDefault = parcelHelpers.interopDefault(_desktopImageHero2Jpg);
+var _desktopImageHero3Jpg = require("../assets/desktop-image-hero-3.jpg");
+var _desktopImageHero3JpgDefault = parcelHelpers.interopDefault(_desktopImageHero3Jpg);
+function Banner({ step: number  }) {
+    const images = {
+        1: {
+            image: (0, _desktopImageHero1JpgDefault.default)
+        },
+        2: {
+            image: (0, _desktopImageHero2JpgDefault.default)
+        },
+        3: {
+            image: (0, _desktopImageHero3JpgDefault.default)
+        }
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "banner"
+        className: "banner",
+        style: {
+            backgroundImage: `url(${images[number].image})`
+        }
     }, void 0, false, {
         fileName: "src/js/Banner.js",
-        lineNumber: 7,
+        lineNumber: 22,
         columnNumber: 3
     }, this);
 }
@@ -27453,10 +27463,16 @@ $RefreshReg$(_c, "Banner");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/mobile-image-hero-1.jpg":"31jU7","../styles/Banner.css":"g3xFW"}],"31jU7":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "mobile-image-hero-1.e3a73dd8.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/Banner.css":"g3xFW","../assets/desktop-image-hero-1.jpg":"bh63j","../assets/desktop-image-hero-2.jpg":"iJCPC","../assets/desktop-image-hero-3.jpg":"gkaV4"}],"g3xFW":[function() {},{}],"bh63j":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "desktop-image-hero-1.32cb3379.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"g3xFW":[function() {},{}],"6LABJ":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"iJCPC":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "desktop-image-hero-2.98827e52.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gkaV4":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "desktop-image-hero-3.54994d9d.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6LABJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$16fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

@@ -9,15 +9,15 @@ import { About } from './About.js'
 import { Light_chair } from './Light_chair.js'
 
 export function App() {
-	const [step, setStep] = useState(1)
+	const number = 1 
 
 	return (
 		<div className="app">
 			<Header />
 			<div className="grid">
-				<Banner style={{position: 'relative'}}/>
-				<Controller step={step}}/>
-				<Shop step={1}/>
+				<Banner step={number}/>
+				<Controller />
+				<Shop step={number}/>
 				<Dark_chair />
 				<About />
 				<Light_chair />

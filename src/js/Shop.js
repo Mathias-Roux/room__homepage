@@ -1,7 +1,7 @@
 import '../styles/Shop.css';
 
 
-export function Shop( { step: number }) {
+export function Shop( { step: number } ) {
 	const descriptions = {
 		1: {
 			title: "Discover innovation ways to decorate",

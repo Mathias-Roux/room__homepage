@@ -1,12 +1,5 @@
 .banner{
-	background-image: url('../assets/mobile-image-hero-1.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-@media screen and (min-width: 53em){
-	.banner{
-		background-image: url('../assets/desktop-image-hero-1.jpg');
-	}
 }

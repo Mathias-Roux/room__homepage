@@ -114,16 +114,9 @@
 }
 
 .banner {
-  background-image: url("mobile-image-hero-1.e3a73dd8.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 53em) {
-  .banner {
-    background-image: url("desktop-image-hero-1.32cb3379.jpg");
-  }
 }
 
 .shop {
