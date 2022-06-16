@@ -4,13 +4,16 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+
+.closed{
 	padding: 40px 30px;
 	display: flex;
 	align-items: center;
 }
 
 .icon{
-	flex: .65;
+	flex: .56;
 }
 
 .icon > img{

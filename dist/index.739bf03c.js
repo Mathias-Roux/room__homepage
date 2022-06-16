@@ -27000,12 +27000,12 @@ function App() {
                                 }, void 0, false, {
                                     fileName: "src/js/App.js",
                                     lineNumber: 30,
-                                    columnNumber: 7
+                                    columnNumber: 8
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/js/App.js",
                                 lineNumber: 25,
-                                columnNumber: 6
+                                columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "right",
@@ -27019,18 +27019,18 @@ function App() {
                                 }, void 0, false, {
                                     fileName: "src/js/App.js",
                                     lineNumber: 37,
-                                    columnNumber: 7
+                                    columnNumber: 8
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/js/App.js",
                                 lineNumber: 32,
-                                columnNumber: 6
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/js/App.js",
                         lineNumber: 24,
-                        columnNumber: 5
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shopJs.Shop), {
                         step: number
@@ -27282,51 +27282,127 @@ parcelHelpers.export(exports, "Mobile_Header", ()=>Mobile_Header);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _mobileHeaderCss = require("../styles/Mobile_Header.css");
-var _iconHamburgerSvg = require("../assets/icon-hamburger.svg");
-var _iconHamburgerSvgDefault = parcelHelpers.interopDefault(_iconHamburgerSvg);
 var _logoSvg = require("../assets/logo.svg");
 var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
+var _iconHamburgerSvg = require("../assets/icon-hamburger.svg");
+var _iconHamburgerSvgDefault = parcelHelpers.interopDefault(_iconHamburgerSvg);
+var _iconCloseSvg = require("../assets/icon-close.svg");
+var _iconCloseSvgDefault = parcelHelpers.interopDefault(_iconCloseSvg);
+var _mobileMenuCss = require("../styles/Mobile_menu.css");
+var _s = $RefreshSig$();
 function Mobile_Header() {
+    _s();
+    const [active, setActive] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "mobile_header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "icon",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _iconHamburgerSvgDefault.default),
-                    alt: "icon_hamburger"
+        children: active === false ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "closed",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "icon",
+                    onClick: ()=>setActive(!active),
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _iconHamburgerSvgDefault.default),
+                        alt: "icon_burger"
+                    }, void 0, false, {
+                        fileName: "src/js/Mobile_Header.js",
+                        lineNumber: 19,
+                        columnNumber: 7
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/js/Mobile_Header.js",
-                    lineNumber: 11,
-                    columnNumber: 5
-                }, this)
-            }, void 0, false, {
-                fileName: "src/js/Mobile_Header.js",
-                lineNumber: 10,
-                columnNumber: 4
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "title",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _logoSvgDefault.default),
-                    alt: "room"
+                    lineNumber: 18,
+                    columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "title",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _logoSvgDefault.default),
+                        alt: "room"
+                    }, void 0, false, {
+                        fileName: "src/js/Mobile_Header.js",
+                        lineNumber: 22,
+                        columnNumber: 7
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/js/Mobile_Header.js",
-                    lineNumber: 14,
-                    columnNumber: 5
+                    lineNumber: 21,
+                    columnNumber: 6
                 }, this)
-            }, void 0, false, {
-                fileName: "src/js/Mobile_Header.js",
-                lineNumber: 13,
-                columnNumber: 4
-            }, this)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "src/js/Mobile_Header.js",
+            lineNumber: 17,
+            columnNumber: 5
+        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "opened",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "icon",
+                    onClick: ()=>setActive(!active),
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _iconCloseSvgDefault.default),
+                        alt: "icon_close"
+                    }, void 0, false, {
+                        fileName: "src/js/Mobile_Header.js",
+                        lineNumber: 28,
+                        columnNumber: 8
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/js/Mobile_Header.js",
+                    lineNumber: 27,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "list",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "home"
+                        }, void 0, false, {
+                            fileName: "src/js/Mobile_Header.js",
+                            lineNumber: 31,
+                            columnNumber: 8
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "shop"
+                        }, void 0, false, {
+                            fileName: "src/js/Mobile_Header.js",
+                            lineNumber: 32,
+                            columnNumber: 8
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "about"
+                        }, void 0, false, {
+                            fileName: "src/js/Mobile_Header.js",
+                            lineNumber: 33,
+                            columnNumber: 8
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "contact"
+                        }, void 0, false, {
+                            fileName: "src/js/Mobile_Header.js",
+                            lineNumber: 34,
+                            columnNumber: 8
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/js/Mobile_Header.js",
+                    lineNumber: 30,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/js/Mobile_Header.js",
+            lineNumber: 26,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
         fileName: "src/js/Mobile_Header.js",
-        lineNumber: 9,
+        lineNumber: 15,
         columnNumber: 3
     }, this);
 }
+_s(Mobile_Header, "5H+W5OT0ZM/bpwqIW0/04u0Ssok=");
 _c = Mobile_Header;
 var _c;
 $RefreshReg$(_c, "Mobile_Header");
@@ -27336,7 +27412,7 @@ $RefreshReg$(_c, "Mobile_Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../styles/Mobile_Header.css":"l4Dh9","../assets/icon-hamburger.svg":"3M8Ig","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"l4Dh9":[function() {},{}],"3M8Ig":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../styles/Mobile_Header.css":"l4Dh9","../assets/icon-hamburger.svg":"3M8Ig","../assets/logo.svg":"6j9le","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/icon-close.svg":"9xqGj","react":"21dqq","../styles/Mobile_menu.css":"fXHBw"}],"l4Dh9":[function() {},{}],"3M8Ig":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-hamburger.9b6ee044.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27376,7 +27452,10 @@ exports.getOrigin = getOrigin;
 },{}],"6j9le":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "logo.4bcd4013.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"81xqq":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"9xqGj":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("g05j8") + "icon-close.8b0baa94.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"fXHBw":[function() {},{}],"81xqq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fd02 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

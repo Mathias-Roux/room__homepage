@@ -1,9 +1,11 @@
 .controller{
+	z-index: 1000;
 	display: flex;
 	width: 120px;
 	height: 60px;
 	position: absolute;
-	inset: auto 0 48% auto;
+	top: 43.3%;
+	right: 0;
 }
 
 .left, .right{
@@ -36,6 +38,7 @@ img{
 
 @media screen and (min-width: 53em){
 	.controller{
-		inset: auto 26.5vw 9vw auto;
+		top: 3%;
+		right: 2%;
 	}
 }

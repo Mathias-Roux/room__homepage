@@ -20,23 +20,23 @@ export function App() {
 		<div className="app">
 			<Header />
 			<div className="grid">
-				<Banner step={number}/>
-				<div className="controller">
-					<div className="left" onClick={() => {
-						if (number === 1){
-							setNumber(number = 3)
-						} else setNumber(number - 1)
-					}} >
-						<img src={left_arrow} alt="left_arrow" />
+				<Banner step={number} />
+					<div className="controller">
+						<div className="left" onClick={() => {
+							if (number === 1){
+								setNumber(number = 3)
+							} else setNumber(number - 1)
+						}} >
+							<img src={left_arrow} alt="left_arrow" />
+						</div>
+						<div className="right" onClick={() => {
+							if (number === 3){
+								setNumber(number = 1)
+							} else setNumber(number + 1)
+						}}>
+							<img src={right_arrow} alt="right_arrow" />
+						</div>
 					</div>
-					<div className="right" onClick={() => {
-						if (number === 3){
-							setNumber(number = 1)
-						} else setNumber(number + 1)
-					}}>
-						<img src={right_arrow} alt="right_arrow" />
-					</div>
-				</div>
 				<Shop step={number}/>
 				<Dark_chair />
 				<About />

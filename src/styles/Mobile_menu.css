@@ -1,0 +1,35 @@
+.opened{
+	width: 100%;
+	background: white;
+	display: flex;
+	align-items: center;
+	padding: 40px 30px;
+}
+
+.opened > .icon{
+	margin-right: 60px;
+}
+
+.opened > .icon > img{
+	display: block;
+	margin: auto 0;
+}
+
+.opened > .icon:hover{
+	cursor: pointer;
+}
+
+.opened > .list{
+	display: flex;
+	list-style: none;
+}
+
+.opened > .list > li{
+	margin-left: 30px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.opened > .list > li:hover{
+	text-decoration: underline;
+}

@@ -51,16 +51,19 @@
 .mobile_header {
   z-index: 1000;
   width: 100%;
-  align-items: center;
-  padding: 40px 30px;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
 }
 
+.closed {
+  align-items: center;
+  padding: 40px 30px;
+  display: flex;
+}
+
 .icon {
-  flex: .65;
+  flex: .56;
 }
 
 .icon > img {
@@ -75,6 +78,42 @@
 .title > img {
   margin: auto 0;
   display: block;
+}
+
+.opened {
+  width: 100%;
+  background: #fff;
+  align-items: center;
+  padding: 40px 30px;
+  display: flex;
+}
+
+.opened > .icon {
+  margin-right: 60px;
+}
+
+.opened > .icon > img {
+  margin: auto 0;
+  display: block;
+}
+
+.opened > .icon:hover {
+  cursor: pointer;
+}
+
+.opened > .list {
+  list-style: none;
+  display: flex;
+}
+
+.opened > .list > li {
+  cursor: pointer;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.opened > .list > li:hover {
+  text-decoration: underline;
 }
 
 .desktop_header {
@@ -117,6 +156,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .shop {
@@ -192,11 +232,13 @@
 }
 
 .controller {
+  z-index: 1000;
   width: 120px;
   height: 60px;
   display: flex;
   position: absolute;
-  inset: auto 0 48% auto;
+  top: 43.3%;
+  right: 0;
 }
 
 .left, .right {
@@ -221,7 +263,8 @@ img {
 
 @media screen and (min-width: 53em) {
   .controller {
-    inset: auto 26.5vw 9vw auto;
+    top: 3%;
+    right: 2%;
   }
 }
 
